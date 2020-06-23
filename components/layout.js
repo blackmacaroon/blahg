@@ -1,19 +1,20 @@
 import Head from 'next/head'
-import styles from './layout.module.css'
+import styles from '../styles/layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Blah-g'
-export const siteTitle = 'blah-g'
+const name = 'Blahg'
+export const siteTitle = 'blahg'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <img className={styles.containerImg} src="/images/cowboyjacuzzi.jpeg"/>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Making a website"
+          content="Making a blog site with next.js"
         />
         <meta
           property="og:image"
@@ -57,7 +58,7 @@ export default function Layout({ children, home }) {
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">
-            <a>← Back to home</a>
+            <a>← Back home</a>
           </Link>
         </div>
       )}
