@@ -12,11 +12,11 @@ return (
         <title>{siteTitle}</title>
     </Head>
     <hr className={utilStyles.styleTwo}/>
-    <section className={utilStyles.headingSm}>Disclaimer: This content may be offensive to some, it stems entirely from a highly sensitive, over 30, straight, married, caucasian female and deals with traumatic topics including: child-free life, brain cancer, implicit white supremacy, eating disorders, self-mutilation, mental illness, drinking, web development, imposter syndrome, death and dogs. 
+    <section className={utilStyles.headingSm}>Disclaimer: This content may be offensive or triggering to some, it stems entirely from a highly sensitive, over 30, straight, married, caucasian female and deals with traumatic topics including: child-free life, brain cancer, implicit white supremacy, eating disorders, self-mutilation, mental illness, drinking, web development, imposter syndrome, death and dogs. 
     </section>
     <hr className={utilStyles.styleTwo}/>
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-      <h2 className={utilStyles.headingLg}>A complainer's journal.</h2>
+      <h2 className={utilStyles.headingLg}>A Complainer's Journal</h2>
       <ul className={utilStyles.list}>
         {allPostsData.map(({ id, date, title }) => (
           <li className={utilStyles.listItem} key={id}>
